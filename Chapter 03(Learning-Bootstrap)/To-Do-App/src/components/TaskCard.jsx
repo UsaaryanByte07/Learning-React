@@ -3,11 +3,11 @@ import Button from "./Buttons.jsx";
 
 const TaskCard = (props) => {
   return (
-      <div class="col-sm-6 mb-3 mb-sm-0 task-card">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">{props.taskName}</h5>
-            <p class="card-text">
+      <div className="col-sm-6 mb-3 mb-sm-0 task-card">
+        <div className="card">
+          <div className="card-body">
+            <h5 className="card-title">{props.taskName}</h5>
+            <p className="card-text">
               {props.taskDate}
             </p>
             <Button btnType="danger-btn" btnText="Delete"/>
