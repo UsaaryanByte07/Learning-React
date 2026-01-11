@@ -10,9 +10,9 @@ const AddTodo = (props) => {
   return (
     <div className="task-add-container">
         {props.inputBoxesArray.map((inputBox) => {
-            return <Input key={inputBox.inputText} inputType={inputBox.inputType} inputText={inputBox.inputText} />
+            return <Input key={inputBox.inputText} inputType={inputBox.inputType} inputText={inputBox.inputText} onChangeHandler = {inputBox.onChangeHandler}/>
         })}
-      <Button btnType="success-btn" btnText="Add" handler={() => adddHandler()} />
+      <Button btnType="success-btn" btnText="Add" clickHandler={() => adddHandler()} />
     </div>
   );
 };

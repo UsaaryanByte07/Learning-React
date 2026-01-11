@@ -1,0 +1,17 @@
+.paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+  color: darkgreen;
+  padding: 10px;
+  margin: 10px;
+  background-color: aqua;
+  border: 4px solid green;
+  border-radius: 8px;
+}
+
+.onHover:hover {
+    cursor: pointer;
+    background-color: lightgreen;
+    color: white;
+    border: 4px solid darkgreen;
+}
