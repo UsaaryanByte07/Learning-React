@@ -82,6 +82,53 @@ A comprehensive guide for setting up and configuring modern web development proj
 
 ---
 
+## 🎨 Tailwind CSS (Vite with React)
+
+### Installation & Configuration
+
+1. **Create a Vite project and navigate to it**
+   ```bash
+   npm create vite@latest
+   cd your-project-name
+   ```
+   Creates a new Vite project with React. Navigate into the project directory.
+
+2. **Install Tailwind CSS and dependencies**
+   ```bash
+   npm install tailwindcss @tailwindcss/vite
+   ```
+   Installs Tailwind CSS version 4 and the Vite plugin for Tailwind.
+
+3. **Configure the Vite plugin for Tailwind CSS**
+   
+   Open `vite.config.js` and add the Tailwind CSS plugin:
+   ```javascript
+   import { defineConfig } from 'vite'
+   import react from '@vitejs/plugin-react'
+   import tailwindcss from '@tailwindcss/vite'
+
+   export default defineConfig({
+     plugins: [react(), tailwindcss()],
+   })
+   ```
+   This configures Vite to use the Tailwind CSS plugin during the build process.
+
+4. **Initialize Tailwind CSS configuration**
+   
+   Add this line to your `src/index.css`:
+   ```css
+   @import "tailwindcss";
+   ```
+   This imports Tailwind's base styles, components, and utilities into your project.
+
+5. **Start your development server**
+   ```bash
+   npm run dev
+   ```
+   Starts the development server with Tailwind CSS enabled. Your Tailwind classes will now work in your React components.
+
+---
+
 ## 🎨 Tailwind CSS (Non-React Project)
 
 ### Installation & Configuration
