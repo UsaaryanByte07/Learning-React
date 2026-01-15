@@ -58,11 +58,11 @@ A comprehensive guide for setting up and configuring modern web development proj
    ```
    Provides a set of customizable SVG icons for React applications.
 
-2. **Install Lucide Labels**
+2. **Install Lucide Lab**
    ```bash
-   npm install @lucide/labels
+   npm install @lucide/lab
    ```
-   Contains additional icon labels for use with Lucide React icons.
+   Contains additional icon lab for use with Lucide React icons.
 
 3. **Import standard icons**
    
